@@ -1,0 +1,34 @@
+db.js ke aandar database se connect hone wala code hai
+mongoose.connect()   // ek in built function hai
+mongoose ki library me changes ho chuke hai aur ab mongoose callbacks ko accept nahi karta hai callbacks ki jagah async and await use karna hota hai
+
+index.js 1 express server rahenga uska boiler plate direct copy paste karna hota hai
+models folder me sare ke sare mongoose ke models rahenge
+
+mongoose bolta hai ki tum tho apni application ko chalao baki jo data base ko manage karne ka kaam hai vo mongoose dek lenga
+models ka first letter capital hona chahiye
+
+module.exports = mongoose.model(model ka naam, schema ka naam)   isline ka matlab hota hai ki schema se model bana do
+
+Express ke aandar router hota hai jisko hum 
+const router = express.Router() kar ke import kar sagte hai
+
+request kiya aur response me hello mila
+
+jab bhi hume req.body ko use karna hoga tab hume 1 middle ware use karna hoga middleware use karne ke liye hume app.use ko use karna hoga
+
+
+middle ware matlab app.use
+
+password kabhi bhi plain text me store nahi karna hota hai
+
+user.save() karke hum apne data ko store kar sagte hai
+
+use router.post() for good security router.get me password dik sagta hai utna secure nahi hota hai
+agat data bahot jyada hai tabh hi hum router.get ki jagah router.post use karte hai
+
+
+
+
+abhi hum express validatorka use karenge
+npm install --save express-validator
