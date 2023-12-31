@@ -32,3 +32,5 @@ agat data bahot jyada hai tabh hi hum router.get ki jagah router.post use karte 
 
 abhi hum express validatorka use karenge
 npm install --save express-validator
+
+Jab bhi errors aayenge validation ke time tab 1 array return honga jisme ki sare errorr rahenge
