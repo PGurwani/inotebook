@@ -38,3 +38,31 @@ Jab bhi errors aayenge validation ke time tab 1 array return honga jisme ki sare
 Collection ka matlab ho hai ki hum ne 1 collection of end oints bana rahe hai jo ki 1 application se relation rakte hai
 
 Authentication se releated jo bhi kaam honge vo isme aayenge
+
+Video no. 48
+
+password ko database me store nahi karte hai nahi tho hack ho jayenga
+
+video number 49 
+
+install bcrypt.js   for adding salt and papper
+1 node,js package hai jiske him password ka salt generate kar sagte hais hash created kar sagte hai pass word ka bcrype promise ko return karta hai
+hashSync function 1 blocking function hai par hum uski jagah await functon ka use karenge
+
+const salt = bcrypt.genSalt(10);   isline se salt generate ho jayenga
+
+bcrypt ka internal mechanism khud hi salt ko store(Adjust ) kar leta ha hume karne ki jarurat nahi hoti hai
+
+bcrypt.hash kar ke pasword ko generate kar sagte hai
+
+jab bhi koi login karenga hum usko return me 1 token denge
+
+install jsonwebtoken 
+jsonwebtoken 1 tarika hai verify karne ka 1 user ko
+
+jab bhi koi user hamari website pe signup karenga tab hum usko in return 1 token denge aur jab bhi next time vo user website pe aake login karenga tab vo hum usko us token ki madat se identify arenge bar bar user apna user id and password nahi bhejenga tho hum usko token ki madat se identify karenge
+
+signture ki madat se hum ye verify kar sagte hai ki user ne info ko change  tho nahi kiya kisi dusre ki info access karne k liye
+
+jwt ki madat se hum client aur server ke beech bahot hi secure commmuncation establish kar sagte hai
+jwt.sign 1 sync method hai
