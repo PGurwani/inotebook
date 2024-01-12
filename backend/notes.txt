@@ -69,3 +69,5 @@ jwt.sign 1 sync method hai
 
 
 git hub
+
+jab bhi passwords wagera ke saath deal karte hai tho GET ki jagah POST use karte hai
