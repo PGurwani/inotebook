@@ -8,7 +8,7 @@ const port = 5000
 app.use(express.json())   //req.body ko use karna hai tho hume 1 middle ware ko use karna padta hai
 // Available routes
 app.use('/api/auth', require('./routes/auth'))
-app.use('/api/notes', require('./routes/notes'))
+app.use('/api/notes', require('./routes/note'))
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

@@ -71,3 +71,26 @@ jwt.sign 1 sync method hai
 git hub
 
 jab bhi passwords wagera ke saath deal karte hai tho GET ki jagah POST use karte hai
+
+auth token ko decode karke usme se user id nikalenge
+
+auth token me hum user aur id bhej rahe hai id token ke aandar present hai pahale se hi ab usko nikalna hai
+
+Middle ware : middle ware 1 function hai jo ki call kiya jayenga jab bhi end points pe koi request aayengi
+
+jin jin routes me middleware chahiye unke second argument me hume middle ware daalna hoga jabhi jake vo run honga
+
+login require wale routes par koi bhi request aayengi tho middle ware ko call kiya jayenga
+jin jin routes me middle ware chchiye honga jin ko hum 1 second argument de denge as a middle ware
+
+fetchuser user ko fetch karenga
+
+middleware 1 function hota hai jo ki req res aur next leta hai
+
+jaha jaha login ki jarurat hai waha waha hum middle ware ko use karenge as a second argument
+  authentication wale sare endpoints khatam kiye hai abhi
+video number 52
+
+express validator ko notes me isliye include kiya taki ye cheez validate ho ki agar notes khali ho tho vo save nahi ho
+
+Video number 54
