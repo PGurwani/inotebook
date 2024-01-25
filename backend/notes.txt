@@ -94,3 +94,16 @@ video number 52
 express validator ko notes me isliye include kiya taki ye cheez validate ho ki agar notes khali ho tho vo save nahi ho
 
 Video number 54
+
+video number 55
+
+backend ka node modules alag hai aur frontend ka node modules alaag jai
+
+install npm i react-router-dom concurrently
+
+cocurrently ki madat se hum 2 server simultaneouly chala sagte hai
+2 server chala ne baad dono ko alag aloag host karenge aur dono aapas me communicate karenge
+
+package.json ke aandar scripts ke aandar both wali line lik ne se dono server ek saath chal sagte hai
+
+npm run both se dono chalenge
