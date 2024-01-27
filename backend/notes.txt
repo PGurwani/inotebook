@@ -107,3 +107,21 @@ cocurrently ki madat se hum 2 server simultaneouly chala sagte hai
 package.json ke aandar scripts ke aandar both wali line lik ne se dono server ek saath chal sagte hai
 
 npm run both se dono chalenge
+
+
+video number 56
+
+index.html me bootstrap ki css and script add karni hogi tabhi bootstrap work karenga 
+
+
+title aur bootstrap index.html se change hoga 
+
+components ko capital lette rme likha jisse ki samaj aaye ki vo components hai
+
+React Router ko website se lana hota hai
+
+input , hr tag ko close karna hota hai
+
+class ko className se replace karo
+
+a tag ko LInk se replace aur href tag ko to se replace while using react router
