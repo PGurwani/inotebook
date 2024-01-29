@@ -13,16 +13,19 @@ function App() {
   return (
     <>
       <NoteState>
-        <Router>
+        <Router>    
           <Navbar />
-          <Routes>
+          <div className="container">    
+          <Routes>    
             <Route path="/" element = {<Home />} />
             <Route path = "/about" element = {<About/> }/>
           </Routes>
+          </div>
         </Router>
       </NoteState>     
     </>
   );
 }
-// Switch ko ROutes ne replace kar diya hai ROutes ke saath element use karna hota hai abhi
+// Switch ko Routes ne replace kar diya hai ROutes ke saath element use karna hota hai abhi
+//container class se cheeje center me aa jati hai
 export default App;
