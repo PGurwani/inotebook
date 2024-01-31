@@ -1,27 +1,36 @@
 //1 state banayenge jo sabko accessable hongi
 // import React, { useState } from "react";
-import NoteContext from "./noteContext"
-
+import noteContext from "./noteContext"
+import { useState } from "react";
 const NoteState = (props) => {
-    // const s1 = {
-    //     "name" : "Harry",
-    //     "class" : "5b"
-    // }
-    // const [state, setState] = useState(s1);
-    // const update = () =>{
-    //     setTimeout(()=>{
-    //         setState({
-    //             "name" : "Larry",
-    //             "class" : "10b"
-    //         })
-    //     },1000);
-    // }
-    //idhar value hamari noteState ko provide kar rahi hai
+
+    const notesInitial = [
+        {
+            "_id": "65acf78911750c57b272059d",
+            "user": "659fd66f06033c3c584352d8",
+            "title": "My title",
+            "description": "PLease wake up early",
+            "tag": "personal",
+            "date": "2024-01-21T10:52:57.544Z",
+            "__v": 0
+        },
+        {
+            "_id": "65acf78911750c57b272059f",
+            "user": "659fd66f06033c3c584352d8",
+            "title": "My title",
+            "description": "PLease wake up early",
+            "tag": "personal",
+            "date": "2024-01-21T10:52:57.690Z",
+            "__v": 0
+        },
+
+    ]
+    const[notes, setNotes] = useState(notesInitial)
     return (       //1 object hai jisme state ki value state hai aur update ki value update hai
-        <NoteContext.Provider value={{}}   >          
-            {props.children}        
-        </NoteContext.Provider>     //iska matlab ye hai ki agar hum koi functon bhi export karte hai apni state ko us karne ke liye tho vo kaam karenga value ke aandar ka function
-         // value{{state : state, update:update}}     hum unsare function ko exports kar sagte hai jo hamarre notes ko update kar sagte hai
+        <noteContext.Provider value={{notes, setNotes}}   >  
+            {props.children}
+        </noteContext.Provider>     //iska matlab ye hai ki agar hum koi functon bhi export karte hai apni state ko use karne ke liye tho vo kaam karenga value ke aandar ka function
+        // value{{state : state, update:update}}     hum unsare function ko exports kar sagte hai jo hamarre notes ko update kar sagte hai
     )
 }
 
